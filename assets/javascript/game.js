@@ -19,11 +19,20 @@ $(document).ready(function() {
 				hp: 100
 			}
 		},
+		displayCharacter: function(args) {
+			$(args.where).append(`<span class="character ${args.class}" id="${args.name}">${args.name}
+				<img src="assets/images/${args.character.image}" alt="${args.name}" class="character-image">
+				${args.character.hp}</span>`);
+		}
 	}
 
 	for (var character in game.characters) {
-		$('#your-character').append(
-			`<span class="character friendly" id="${character}">${character}<img src="assets/images/${game.characters[character].image}" alt="${character}" class="character-image">${game.characters[character].hp}</span>`);
+		game.displayCharacter({
+			name: character,
+			character: game.characters[character],
+			where: "#characters",
+			class: "friendly"
+		});
 	}
 
 	$('.character').click(function(e) {
