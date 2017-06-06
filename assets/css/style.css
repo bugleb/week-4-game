@@ -1,3 +1,35 @@
 body {
 	background-color: lightgray;
 }
+
+.character-image {
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+.character {
+	width: 200px;
+	height: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+}
+
+.friendly {
+	border-color: green;
+	background-color: #eeffee;
+}
+
+.enemy {
+	border-color: red;
+	background-color: #ffeeee;
+}
