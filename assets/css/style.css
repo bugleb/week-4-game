@@ -2,6 +2,15 @@ body {
 	background-color: lightgray;
 }
 
+h1 {
+	font-size: 2em;
+	text-align: center;
+}
+
+.container {
+	display: inline-block;
+}
+
 .character-image {
 	width: 200px;
 	height: 150px;
@@ -32,4 +41,13 @@ body {
 .enemy {
 	border-color: red;
 	background-color: #ffeeee;
+}
+
+#attack-button {
+	font-size: 2em;
+}
+
+#attack-button-div {
+	padding: 10px;
+	display: none;
 }

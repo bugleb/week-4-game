@@ -8,9 +8,25 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div id="characters"></div>
-	<div id="your-character"></div>
-	<div id="enemy-character"></div>
+	<!-- <div id="characters"></div> -->
+	<div class="container">
+		<div class="container">
+			<h1 id="your-character-header">Select your character!</h1>
+			<span id="your-character"></span>
+		</div>
+		<div class="container" id="attack-button-div">
+			<button id="attack-button">Attack</button>
+		</div>
+		<div class="container">
+			<h1 id="enemy-character-header"></h1>
+			<span id="enemy-character"></span>
+		</div>
+	</div>
+	<br>
+	<div class="container">
+		<h1 id="enemy-characters-header"></h1>
+		<div id="enemy-characters"></div>
+	</div>
 
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
